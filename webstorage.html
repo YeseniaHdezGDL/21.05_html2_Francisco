@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="resultado"></div>
+        <script>
+        if(typeof(Storage) !== "undefined") {
+            localStorage.setItem("Nombre", "Carlos");
+            document.getElementById("resultado").innerHTML = localStorage.getItem("Nombre");
+        } else {
+            document.getElementById("resultado").innerHTML = "Perdón, tu navegador no soporta el almacenamiento web";
+        }
+        </script>
+    </body>
+
+
+
+
+</html>

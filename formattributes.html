@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+       <form name="registroInfo" method="POST">
+            <p id="titulo">Regístrate aquí:</p> 
+            <p >Nombre completo:</p>   
+            <input id="nombre" type="text" name="nombre" onblur="myfunction()">
+            <p>Correo electrónico:</p>  
+            <input type="text" name="email">
+       </form> 
+    </body>
+
+    <!-- esto es para que cuando escriban en el input con el id nombre, se haga en mayúsculas -->
+    <script>
+        function myfunction() {
+            let x = document.getElementById("nombre");
+            x.value = x.value.toUpperCase(); 
+            if (x.value == "YESENIA") {
+             alert("Hola " + x.value);
+            }
+        }
+    </script>
+</html>
